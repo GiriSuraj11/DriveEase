@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | DriveEase</title>
+  <link rel="stylesheet" href="css/cars.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+
+<!-- Navigation -->
+    <header class="navbar">
+      <h1 class="logo">DriveEase</h1>
+
+      <!-- Toggle Button -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+  <section class="booking-section">
+    <h2>Complete Your Booking</h2>
+
+    <div class="booking-box">
+      <div style="font-size: 1.2rem;" id="bookingCarInfo"></div>
+
+      <form id="bookingForm">
+        <label>
+          Pickup Date
+          <input type="date" id="pickupDate" required />
+        </label>
+
+        <label>
+          Drop Date
+          <input type="date" id="dropDate" required />
+        </label>
+
+        <label>
+          City
+          <input type="text" id="city" placeholder="Enter city" required />
+        </label>
+
+        <p class="total-price">
+          Total Price: ₹<span id="totalPrice">0</span>
+        </p>
+
+        <button type="submit" class="cta-btn">
+          Confirm Booking
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

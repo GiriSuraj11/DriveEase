@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | DriveEase</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+    <header class="navbar">
+      <h1 class="logo">DriveEase</h1>
+
+      <!-- Toggle Button -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+  <section class="contact-section">
+    <h2>Contact DriveEase</h2>
+    <p class="contact-subtitle">
+      Have a question or need help? We’re here for you.
+    </p>
+
+    <div class="contact-wrapper">
+
+      <!-- Contact Form -->
+      <form class="contact-form" id="contactForm">
+        <label>
+          Full Name
+          <input type="text" required />
+        </label>
+
+        <label>
+          Email Address
+          <input type="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea rows="4" required></textarea>
+        </label>
+
+        <button type="submit" class="cta-btn">
+          Send Message
+        </button>
+
+        <p class="form-success" id="formSuccess">
+          Message sent successfully!
+        </p>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Support</h3>
+        <p>Email: support@driveease.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Available: 9 AM – 9 PM</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <a href="index.html" class="cta-btn">Back to Home</a> -->
+
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cars | DriveEase</title>
+  <link rel="stylesheet" href="css/cars.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <div id="header"></div>
+
+
+<!-- Navigation -->
+    <header class="navbar">
+      <h1 class="logo">DriveEase</h1>
+
+      <!-- Toggle Button -->
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+  <!-- Cars Section -->
+  <section class="cars-section">
+    <h2>Available Cars</h2>
+
+    <!-- Filter -->
+    <select id="typeFilter">
+      <option value="all">All Types</option>
+      <option value="SUV">SUV</option>
+      <option value="Sedan">Sedan</option>
+      <option value="Hatchback">Hatchback</option>
+      <option value="MUV">MUV</option>
+      <option value="Luxury Sedan">Luxury Sedan</option>
+      <option value="Luxury SUV">Luxury SUV</option>
+    </select>
+
+    <!-- Cars Grid -->
+    <div class="cars-grid" id="carsGrid">
+      <!-- Car cards injected by JavaScript -->
+    </div>
+  </section>
+
+  
+  <script src="js/main.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/cars.js"></script>
+  <script src="car-details.js"></script>
+
+</body>
+</html>
